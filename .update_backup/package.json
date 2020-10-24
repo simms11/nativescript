@@ -5,17 +5,14 @@
   "repository": "<fill-your-repository-here>",
   "dependencies": {
     "@nativescript/core": "~7.0.0",
-    "@types/mocha": "^8.0.3",
-    "chai": "^4.2.0",
-    "nativescript-android-utils": "^1.0.2",
-    "tns-core-modules": "^6.5.20"
+    "nativescript-android-utils": "^1.0.2"
   },
   "devDependencies": {
-    "@nativescript/types": "7.0.0",
-    "@nativescript/webpack": "~3.0.0",
-    "mocha": "^5.2.0",
+    "mocha": "~5.2.0",
     "mochawesome": "~3.1.2",
-    "nativescript-dev-appium": "next"
+    "nativescript-dev-appium": "next",
+    "@nativescript/types": "7.0.0",
+    "@nativescript/webpack": "~3.0.0"
   },
   "scripts": {
     "e2e": "mocha --opts ./e2e/config/mocha.opts",

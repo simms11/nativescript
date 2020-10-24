@@ -3,24 +3,26 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "org.nativescript.bgservice",
+    "tns-android": {
+      "version": "next"
+    }
+  },
   "dependencies": {
-    "@nativescript/core": "~7.0.0",
-    "@types/mocha": "^8.0.3",
-    "chai": "^4.2.0",
     "nativescript-android-utils": "^1.0.2",
-    "tns-core-modules": "^6.5.20"
+    "tns-core-modules": "next"
   },
   "devDependencies": {
-    "@nativescript/types": "7.0.0",
-    "@nativescript/webpack": "~3.0.0",
-    "mocha": "^5.2.0",
+    "mocha": "~5.2.0",
     "mochawesome": "~3.1.2",
-    "nativescript-dev-appium": "next"
+    "nativescript-dev-appium": "next",
+    "nativescript-dev-webpack": "next",
+    "tns-platform-declarations": "next"
   },
   "scripts": {
     "e2e": "mocha --opts ./e2e/config/mocha.opts",
     "ns-verify-bundle": "ns-verify-bundle",
     "update-ns-webpack": "update-ns-webpack"
-  },
-  "main": "app.js"
+  }
 }
